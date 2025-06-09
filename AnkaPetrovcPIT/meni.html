@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Meni</title>
 </head>
 <body>
     <header>
@@ -12,64 +12,160 @@
     </header>
 
     <nav class="navigacija">
-        <a href="index.html">Pocetna</a>
-        <a href="meni.html" class="active">Meni</a>
-        <a href="galerija.html">Galerija</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="index.html">Pocetna</a> | 
+        <a href="meni.html" class="active"> Meni</a> | 
+        <a href="galerija.html"> Galerija</a> | 
+        <a href="rezervacija.html"> Rezervacija</a> | 
+        <a href="kontakt.html"> Kontakt</a> 
     </nav>
 
-    <main class="meni">
-        <section>
-            <h2>Predjela</h2>
+<main class="meni">
+    <section>
+        <h2 class="toggle">Predjela</h2>
+        <div class="stavke">
             <div class="stavka">
-                <span>Grčka salata</span>
+                <span class="naziv">Grčka salata</span>
                 <span class="cena">450 RSD</span>
             </div>
             <div class="stavka">
-                <span>Bruskete</span>
+                <span class="naziv">Bruskete</span>
                 <span class="cena">390 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Celer salata sa maslinama i paradajzom</span>
+                <span class="cena">390 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Salata sa svežim povrćem</span>
+                <span class="cena">300 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Šampinjoni sa maslinama i začinima</span>
+                <span class="cena">270 RSD</span>
+            </div>
         </div>
-        </section>
+    </section>
 
-        <section>
-        <h2>Glavna jela</h2>
+    <section>
+        <h2 class="toggle">Glavna jela</h2>
+        <div class="stavke">
             <div class="stavka">
-                <span>Ćevapi sa pomfritom</span>
-                <span class="cena">750 RSD</span>
+                <span class="naziv">Punjena paprika sa mesom i pirinčem, sos od paradajza</span>
+                <span class="cena">850 RSD</span>
             </div>
             <div class="stavka">
-                <span>Punjena piletina</span>
-                <span class="cena">890 RSD</span>
+                <span class="naziv">Punjena piletina</span>
+                <span class="cena">680 RSD</span>
             </div>
-        </section>
-
-        <section>
-        <h2>Pića</h2>
             <div class="stavka">
-                <span>Ceđena pomorandža (0.3L)</span>
+                <span class="naziv">Pečena teleća ili juneća rebra sa krompirom i povrćem</span>
+                <span class="cena">1,200 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Pileći file u sosu od pečuraka sa pire krompirom</span>
+                <span class="cena">900 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Riblji file sa blitvom i krompirom</span>
+                <span class="cena">1,100 RSD</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="toggle">Prilozi</h2>
+        <div class="stavke">
+            <div class="stavka">
+                <span class="naziv">Pire krompir</span>
+                <span class="cena">250 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Dinstano povrće</span>
+                <span class="cena">300 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Šopska salata</span>
+                <span class="cena">300 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Mešano povrće na žaru</span>
+                <span class="cena">350 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Domaći hleb</span>
+                <span class="cena">100 RSD</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="toggle">Pića</h2>
+        <div class="stavke">
+            <div class="stavka">
+                <span class="naziv">Espresso</span>
+                <span class="cena">140 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Ledena kafa</span>
+                <span class="cena">300 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Čaj (crni, zeleni, voćni)</span>
+                <span class="cena">170 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Coca-Cola, Fanta, Sprite (0.33L)</span>
+                <span class="cena">200 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Ceđena pomorandža (0.3L)</span>
                 <span class="cena">320 RSD</span>
             </div>
             <div class="stavka">
-                <span>Espresso</span>
-                <span class="cena">140 RSD</span>
+                <span class="naziv">Mineralna voda (0.5L)</span>
+                <span class="cena">150 RSD</span>
             </div>
-        </section>
-
-        <h2>Dezerti</h2>
             <div class="stavka">
-                <span>Tiramisu</span>
+                <span class="naziv">Domaće pivo</span>
+                <span class="cena">250 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Domaće vino (crveno, belo) čaša (1 dl)</span>
+                <span class="cena">250 RSD</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="toggle">Dezerti</h2>
+        <div class="stavke">
+            <div class="stavka">
+                <span class="naziv">Tiramisu</span>
                 <span class="cena">450 RSD</span>
             </div>
             <div class="stavka">
-                <span>Čizkejk</span>
+                <span class="naziv">Čizkejk</span>
                 <span class="cena">390 RSD</span>
             </div>
-        </section>
-
-  </main>
+            <div class="stavka">
+                <span class="naziv">Torta od oraha sa kafom</span>
+                <span class="cena">400 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Sladoled sa toplim voćem</span>
+                <span class="cena">450 RSD</span>
+            </div>
+            <div class="stavka">
+                <span class="naziv">Palačinke sa džemom ili nutelom</span>
+                <span class="cena">350 RSD</span>
+            </div>
+        </div>
+    </section>
+</main>
 
     <footer>
         <p>&copy;2025 Restoran More</p>
     </footer>
+    <script src="meni.js"></script>
 </body>
 </html>

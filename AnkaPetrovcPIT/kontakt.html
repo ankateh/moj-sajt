@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Kontakt informacije</title>
 </head>
 <body>
-    <header>
+    <header >
         <h1>Restoran More</h1>
     </header>
 
     <nav class="navigacija">
-        <a href="index.html">Pocetna</a>
-        <a href="meni.html">Meni</a>
-        <a href="galerija.html">Galerija</a>
-        <a href="kontakt.html" class="active">Kontakt</a>
+        <a href="index.html">Pocetna</a> | 
+        <a href="meni.html"> Meni</a> | 
+        <a href="galerija.html"> Galerija</a> | 
+        <a href="rezervacija.html"> Rezervacija</a> | 
+        <a href="kontakt.html" class="active"> Kontakt</a>
     </nav>
 
     <main>
         <section class="contact">
             <h2>Kontaktirajte nas</h2>
-            <form action="#" method="post" class="contact_form">
+            <form action="https://formspree.io/f/mgvyearo" method="post" class="contact_form">
                 <label for="ime">Ime i prezime:</label><br>
                 <input type="text" id="ime" name="ime" required><br>
 
@@ -31,7 +32,7 @@
                 <label for="poruka">Poruka:</label><br>
                 <textarea id="poruka" name="poruka" rows="5" required></textarea><br>
 
-                <button type="submit">Pošalji</button>
+                <button type="submit" class="btn">Pošalji</button>
             </form>
         </section>
     </main>
