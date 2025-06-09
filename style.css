@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(246, 242, 238);
+}
+
+h1{
+    padding-left: 20px;
+}
+.hero-content h1{
+    padding-left: 0;
+}
+
+.navigacija{
+    background-color: rgb(246, 242, 238);
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.navigacija a{
+    text-decoration: none;
+    color: rgb(25, 24, 23);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 0;
+}
+.navigacija a:hover{
+    transform: scale(1.07);
+    transition: transform 0.6s ease;
+    cursor: pointer;
+}
+
+
+.pocetna{
+    margin: 30px;
+    font-size: 18px;
+}
+
+.hero{
+    background-image:url(Slike/slika16.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    padding-left: 30px;
+    margin: 0;
+    color:rgb(225, 222, 219);
+}
+.hero-content h1{
+    font-size: 48px;
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+}
+.hero p{
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.btn{
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px;
+    background-color: rgb(225, 222, 219);
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(25, 24, 23);
+    transition: transform 0.2s;
+}
+ .btn:hover{
+    transform: scale(1.1);
+}
+
+h2, #paragraf{
+    padding-left:20px ;
+}
+
+.meni{
+    min-height:630px;
+    padding: 40px;
+}
+
+.meni h2:hover{
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+.meni h2.toggle {
+            cursor: pointer;
+            user-select: none;
+            background-color:rgb(221, 209, 197);
+            padding: 10px;
+            border: none;
+            height: 35px;
+            margin: 0;
+            margin-top: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+.meni h2.toggle.active {
+            background-color:rgb(214, 186, 158);
+        }
+
+.stavke {
+            display: none;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-top: none;
+        }
+
+.stavka {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+.naziv  {
+            font-weight: bold;
+        }
+
+.galerija {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  min-height:1000px ;
+}
+
+.galerija img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.galerija img:hover {
+  transform: scale(1.05);
+}
+
+footer{
+    background-color: rgb(25, 24, 23);
+    height: 50px;
+    padding: 30px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+footer p{
+    color:  rgb(246, 242, 238);
+}
+
+.rezervacija{
+    padding-left: 20px;
+}
+.contact_form{
+    min-height: 680px;
+    padding-left: 20px;
+}
+
+.rezervacija label{
+    font-size: large;
+}
