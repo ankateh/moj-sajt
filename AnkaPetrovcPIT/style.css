@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
-  background-color: rgb(246, 242, 238);
+  background-color: #f2f0eb;
 }
 
 h1{
@@ -12,14 +12,16 @@ h1{
     padding-left: 0;
 }
 
-.navigacija{
-    background-color: rgb(246, 242, 238);
+.navigacija {
+    background-color:#f2f0eb;
     height: 50px;
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-evenly;
+    gap: 10px;
 }
+
 
 .navigacija a{
     text-decoration: none;
@@ -36,6 +38,9 @@ h1{
     cursor: pointer;
 }
 
+.navigacija a.active {
+  color: rgb(202, 176, 130);
+}
 
 .pocetna{
     margin: 30px;
@@ -76,13 +81,35 @@ h1{
     transform: scale(1.1);
 }
 
-h2, #paragraf{
+#paragraf{
     padding-left:20px ;
 }
 
-.meni{
-    min-height:630px;
+.meni {
+    min-height: 100vh;
+    background-image: url('Slike/slika9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
     padding: 40px;
+}
+
+.meni section {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.stavke {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(0, 0, 0);
+}
+
+.meni h2{
+    color: rgb(0, 0, 0);
 }
 
 .meni h2:hover{
@@ -93,7 +120,7 @@ h2, #paragraf{
 .meni h2.toggle {
             cursor: pointer;
             user-select: none;
-            background-color:rgb(221, 209, 197);
+            background-color:rgb(179, 159, 139);
             padding: 10px;
             border: none;
             height: 35px;
@@ -104,13 +131,13 @@ h2, #paragraf{
         }
 
 .meni h2.toggle.active {
-            background-color:rgb(214, 186, 158);
+            background-color:rgb(125, 107, 88);
         }
 
 .stavke {
             display: none;
             padding: 10px;
-            border: 1px solid #eee;
+            border: 1px solid rgb(161, 141, 121);
             border-top: none;
         }
 
@@ -145,25 +172,100 @@ h2, #paragraf{
   transform: scale(1.05);
 }
 
+.galerija-okvir{
+    margin-bottom: 40px;
+}
+
 footer{
     background-color: rgb(25, 24, 23);
     height: 50px;
     padding: 30px;
     font-size: 18px;
-    margin-top: 40px;
 }
 footer p{
     color:  rgb(246, 242, 238);
 }
 
 .rezervacija{
-    padding-left: 20px;
+    min-height: 700px;
+    background-image: url("Slike/slika9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contact_form{
-    min-height: 680px;
-    padding-left: 20px;
+
+.rezervacija_form {
+    width: 350px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
 }
 
 .rezervacija label{
     font-size: large;
 }
+
+.contact {
+    min-height: 680px;
+    background-image: url("Slike/slika7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    width: 100%;
+}
+
+.contact_form {
+    width: 250px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact_form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact_form input, .contact_form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.mapa {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.informacije{
+    font-size: larger;
+}
+
+.informacije a{
+    text-decoration: none;
+    color: black;
+}
+
